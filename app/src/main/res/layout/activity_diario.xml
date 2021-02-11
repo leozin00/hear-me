@@ -1,0 +1,108 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutDiario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Diario">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarDiario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:theme="@style/AppTheme">
+
+            <include
+                layout="@layout/app_bar_main2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/toolbarDiario"
+            android:layout_below="@+id/appBarDiario"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgContatoDiario"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/avatar_anonimo"
+                android:background="@drawable/radius_foto_usuario"
+                android:padding="5dp"
+                android:elevation="3dp"/>
+
+            <TextView
+                android:id="@+id/lblTituloDiario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1.0"
+                android:textColor="#4F4F4F"
+                android:text="Diario"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lvDiario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/areaMensagem"
+            android:layout_below="@+id/toolbarDiario"
+            android:padding="8dp"
+            android:divider="@android:color/transparent"/>
+
+        <include
+            android:id="@+id/areaMensagem"
+            layout="@layout/mensagem_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom" />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navegadorDiario"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#eff2f0"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:paddingTop="18dp">
+
+            <ImageView
+                android:id="@+id/imgFotoDiario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/avatar2" />
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

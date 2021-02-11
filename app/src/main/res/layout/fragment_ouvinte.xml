@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/LinearLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_ouvinte"
+android:orientation="vertical"
+tools:context=".OpcoesCadastro">
+
+
+<ScrollView
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    app:layout_constraintBottom_toTopOf="@+id/dots5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgUsu2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/avatar2"
+             />
+
+        <TextView
+            android:id="@+id/lblUsu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/usuarioOuvinte"
+            android:textSize="24sp"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:id="@+id/lblTextoOuvinte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/texto_ouvinte" />
+
+        <TextView
+            android:id="@+id/lblInsira2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="@string/formulario_insiradados" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblNome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_nome"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/txtNome2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/cor_cursor"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblNomeOuvinte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_nomeusuario"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/txtNomeOuvinte"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/cor_cursor"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblDataNasc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_datanasc"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/txtDataNasc2"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:inputType="date"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/cor_cursor"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblGenero2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_genero"
+                android:textColor="#fff"/>
+
+            <RadioGroup
+                android:id="@+id/rgGenero2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMasc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/rbMasc"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/black"
+                    android:buttonTint="#FFF"/>
+
+                <RadioButton
+                    android:id="@+id/rbFem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rbFem"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/black"
+                    android:buttonTint="#FFF"/>
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblEmail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_Email"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/txtEmailUsuario2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblEstado2"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_estado" />
+
+            <EditText
+                android:id="@+id/txtEstado2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/cor_cursor"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/lblCidade2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_cidade"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/txtCidade2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/cor_cursor"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/lblSenha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_senha"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/txtSenhaUsuario2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/lblConfirmarSenha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/formulario_confirmsenha"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/txtConfirmarSenha2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnConfirmarUsuario2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/radius"
+            android:padding="15dp"
+            android:text="@string/formulario_botao" />
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

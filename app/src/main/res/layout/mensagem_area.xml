@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/txtMensagemDiario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Digite sua mensagem"
+        android:maxHeight="80dp"
+        android:textColor="#000"
+        android:textColorHint="#aaa" />
+
+    <ImageView
+        android:id="@+id/imgEnviarDiario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_send" />
+</LinearLayout>

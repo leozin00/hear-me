@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_usuario"
+    android:orientation="vertical"
+    tools:context=".OpcoesCadastro">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/dots5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgUsu"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/avatar2" />
+
+            <TextView
+                android:id="@+id/lblUsu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Usúario comum"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/lblTextoComum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/texto_usuario"
+                android:textColor="#fff"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/lblInsira"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/formulario_insiradados"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_nome"
+                    android:textColor="#fff"/>
+
+                <EditText
+                    android:id="@+id/txtNome"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblNomeUsu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_nomeusuario"
+                    android:textColor="#fff"/>
+
+                <EditText
+                    android:id="@+id/txtNomeUsu"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblDataNasc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_datanasc"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/txtDataNasc"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:inputType="date"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblGenero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_genero"
+                    android:textColor="#fff" />
+
+                <RadioGroup
+                    android:id="@+id/rgGenero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMasc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/rbMasc"
+                        android:textColor="@android:color/white"
+                        android:textColorLink="@android:color/black"
+                        android:buttonTint="#FFF"/>
+
+                    <RadioButton
+                        android:id="@+id/rbFem"
+                        android:buttonTint="#FFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/rbFem"
+                        android:textColor="@android:color/white"
+                        android:textColorLink="@android:color/black" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_Email"
+                    android:textColor="#fff"/>
+
+                <EditText
+                    android:id="@+id/txtEmailUsuario"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblEstado"
+                    android:layout_width="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_estado" />
+
+                <EditText
+                    android:id="@+id/txtEstado"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/lblCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_cidade"
+                    android:textColor="#fff"/>
+
+                <EditText
+                    android:id="@+id/txtCidade"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/lblSenha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_senha"
+                    android:textColor="#fff"/>
+
+                <EditText
+                    android:id="@+id/txtSenhaUsuario"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/lblConfirmarSenha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/formulario_confirmsenha"
+                    android:textColor="#fff"/>
+
+                <EditText
+                    android:id="@+id/txtConfirmarSenha"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cor_cursor" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnConfirmarUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius"
+                android:padding="15dp"
+                android:text="@string/formulario_botao" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

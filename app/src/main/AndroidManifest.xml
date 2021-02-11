@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lo.myapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_hearme"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name=".ProvedorSugestao"
+            android:authorities=".ProvedorSugestao"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="android.a.searchable"
+            android:resource="@xml/searchable" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Slide"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".OpcoesCadastro"
+            android:label="@string/title_activity_opcoes_cadastro" />
+        <activity
+            android:name=".Diario"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Sons"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".VerProprioPerfil"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Acalme_se"
+            android:label="@string/title_activity_acalme_se"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GifRespiracao"
+            android:label="@string/title_activity_gif_respiracao"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Calendario"
+            android:label="@string/title_activity_calendario"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Configuracoes" />
+        <activity android:name=".InserirFotoPerfil" />
+        <activity
+            android:name=".VerUsuario"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ListaSugestao"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListaAmigos"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Comentar"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

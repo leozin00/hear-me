@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_pesquisa"
+        android:icon="@drawable/ic_menu_search"
+        android:title="pesquisa"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/btnContfiguracao"
+        android:orderInCategory="100"
+        android:title="Configurações"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/volume"
+        android:orderInCategory="200"
+        android:title="Volume"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/paleta"
+        android:orderInCategory="300"
+        android:title="Paleta de Cores"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/termos"
+        android:orderInCategory="400"
+        android:title="Termos de uso"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ajuda"
+        android:orderInCategory="500"
+        android:title="Ajuda"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/wecare"
+        android:orderInCategory="600"
+        android:title="Conheça a We Care!"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/sair"
+        android:orderInCategory="700"
+        android:title="Sair"
+        app:showAsAction="never"
+        />
+</menu>

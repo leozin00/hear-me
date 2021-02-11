@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Terceiro">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TableLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="647dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/espaco1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/lblFazerLogin"
+
+                android:textColor="@android:color/white"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <View
+                android:id="@+id/espaco3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="2" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/lblEmail"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/txtEmailUsuario"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@drawable/cor_cursor" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/lblSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/lblSenha"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/txtSenha"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@drawable/cor_cursor" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:id="@+id/espaco4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+
+                />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:linksClickable="false"
+                android:text="OK!"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+
+        <View
+            android:id="@+id/espaco5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <TextView
+                android:id="@+id/lblCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/lblCadastrar"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

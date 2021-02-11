@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo"
+    tools:context=".ListaAmigos">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarListComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/lblTituloComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarListComentarios"
+        android:gravity="center"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.0"
+        android:text="@string/lblComentario"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lvComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/areaComentar"
+        android:layout_below="@+id/lblTituloComentario"
+        android:divider="@android:color/transparent" />
+    <include
+        android:id="@+id/areaComentar"
+        layout="@layout/mensagem_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" /></RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:id="@+id/layout_proprio_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/imgPerfilPropriaPostagem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/radius_foto_usuario"
+            android:elevation="2dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/avatar_anonimo" />
+
+        <TextView
+            android:id="@+id/lblNomeUsuarioPropriaPostagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Homer Simpson"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/lblTempoPostagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="aaaaaaa"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imgProprioUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_proprio_usuario"
+        android:background="@android:color/white"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/imgPropriaPostagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:maxHeight="500dp"
+            android:minHeight="400dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

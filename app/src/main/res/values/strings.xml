@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">HearMe</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_slide">slide</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="usuarioComum">Usuário comum</string>
+    <string name="usuarioOuvinte">Usuário ouvinte</string>
+    <string name="usuarioProfissional">Usuário Profissional</string>
+    <string name="Descricao">Lidar com problemas como a depressão e a ansiedade diariamente é um peso nada fácil de se carregar sozinhos? Não mais! nosso aplicativo visa aproximar os usúarios portadores desta condição e auxilia-los com as ferramentas do mesmo.</string>
+    <string name="title_activity_opcoes_cadastro">opcoesCadastro</string>
+    <string name="texto_usuario">Fazem parte do grupo de pessoas que sofrem de depressão, ansiedade e\\ou outros problemas pscicológicos ou até mesmo quem está passando por alguma situação difícil e deseja um local acolhedor para desabafar e encontrar ajuda profissional.</string>
+    <string name="formulario_nome">Nome: </string>
+    <string name="formulario_insiradados">Insira seus dados</string>
+    <string name="formulario_sobrenome">Sobrenome: </string>
+    <string name="formulario_nomeusuario">Nome de usuário: </string>
+    <string name="formulario_datanasc">Data de nascimento: </string>
+    <string name="formulario_genero">Gênero: </string>
+    <string name="formulario_Email">Email: </string>
+    <string name="formulario_estado">Estado: </string>
+    <string name="formulario_cidade">Cidade: </string>
+    <string name="formulario_senha">Senha: </string>
+    <string name="formulario_confirmsenha">Confirmar senha: </string>
+    <string name="formulario_botao">Tudo pronto!</string>
+    <string name="texto_ouvinte">Os ouvintes são aqueles que querem utilizar o aplicativo com o objetivo de ouvir e acolher os usuários comuns.</string>
+    <string name="texto_profissional">Como o nome sugere, os usuários profissionais são psicólogos e psiquiatras dispostos a oferecer ajuda voluntária aos demais usuários do aplicativo.</string>
+    <string name="lblFazerLogin">Fazer Login :</string>
+    <string name="lblEmail">Email :</string>
+    <string name="lblSenha">Senha :</string>
+    <string name="lblCadastrar">Cadastrar-se</string>
+    <string name="btnOk">OK !</string>
+    <string name="lblSobre">Sobre o HearMe</string>
+    <string name="lbl_sons_relaxantes">Sons Relaxantes</string>
+    <string name="lblFloresta">Floresta</string>
+    <string name="lblTempestade">Tempestade</string>
+    <string name="lblVentania">Ventania</string>
+    <string name="lblMar">Mar</string>
+    <string name="lblAgua">Água</string>
+    <string name="lblRelax">Relax</string>
+    <string name="title_activity_acalme_se">Acalme_se</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_acalme_se">A.C.A.L.M.E.-S.E</string>
+    <string name="descricao_acalme_se">Leia com calma, item por item, e tente incorporar esta técnica ao seu cotidiano. Note que cada letra da palavra ACALME-SE fala de um dos oito passos da estratégia. Experimente!</string>
+    <string name="descricao_a">ACEITE sua ansiedade, mesmo que lhe pareça absurdo no momento. Substitua seu medo, raiva e rejeição por aceitação e não lute contra as sensações.</string>
+    <string name="descricao_a2">AJA como se não estivesse ansioso, ou seja, diminua o ritmo das suas ações, mas sem parar completamente. Não se desespere ou interrompa o que está fazendo para, supostamente, “fugir” da ansiedade.</string>
+    <string name="descricao_c">CONTEMPLE as coisas ao redor e não fique apenas olhando para dentro de você. Deixe seu corpo agir como ele quiser, sem julgamentos, e aprenda que, como observador, você evita “se transformar” em sua ansiedade.</string>
+    <string name="descricao_e">EXAMINE seus pensamentos, sem antecipar problemas que sequer podem vir a aparecer. Seja mais racional e verifique se há motivos reais para os medos e as preocupações.</string>
+    <string name="descricao_e2">Espere o futuro com aceitação. Livre-se do pensamento mágico de que você terá se livrado definitivamente de sua ansiedade, para sempre. Ela é necessária para você viver e continuar vivo(a). Em vez de considerar-se livre dela, surpreenda-se pelo jeito como você a maneja, como você acabou de fazer agora. </string>
+    <string name="descricao_l">LIBERE o ar de seus pulmões bem lentamente. Respire devagar, contando até três na inspiração e até seis na expiração. Ao soltar o ar, não sopre, apenas deixe-o sair lentamente por sua boca, identificando o ritmo ideal para sua respiração.</string>
+    <string name="descricao_m">MANTENHA os passos anteriores e repita cada um deles.</string>
+    <string name="descricao_s">SORRIA, pois você conseguiu, até este momento, seguir os passos e aceitar e controlar a ansiedade sozinho. Você agora saberá como lidar com os sentimentos ruins e estranhos.</string>
+    <string name="title_activity_gif_respiracao">gifRespiracao</string>
+    <string name="texto_tecnica_respiracao">Sente-se confortavelmente. Observe a sua respiração, percebendo o ritmo da sua respiração. Coloque a sua atenção no gif que sera exibido.</string>
+    <string name="respiracao">Inspire</string>
+    <string name="title_activity_calendario">Calendario</string>
+
+    <string name="muitoBem">Muito Bem</string>
+    <string name="bem">Bem</string>
+    <string name="razoavel">Razoável</string>
+    <string name="ruim">Ruim</string>
+    <string name="muitoRuim">Muito Ruim</string>
+    <string name="comoVoceEsta">Como você está se sentindo ?</string>
+    <string name="digaComoFoi">Diga como foi seu dia</string>
+    <string name="btnCalendario">Salvar dia</string>
+    <string name="btnCancelar">Cancelar</string>
+
+    <string name="lblCalendario">Caléndario do Humor</string>
+    <string name="lblMeses">Mêses</string>
+
+    <string name="lblQuandoExpandido">Quando estiver expandindo inspire </string>
+    <string name="lblQuandoDiminuindo"> Quando estiver diminuindo ,expire</string>
+
+    <string name="lblGraficoHumor">Humor no mês</string>
+    <string name="lblGrafico">Humor no mês</string>
+    <string name="lblVolume">Volume</string>
+    <string name="lblAjustarVolume">Ajustar o volume</string>
+    <string name="lblConfiguracoes">Configurações</string>
+    <string name="lblAjustarPaleta">Ajustar a paleta de cores</string>
+    <string name="lblPaleta">Paleta de cores</string>
+    <string name="lblAjuda">Ajuda</string>
+    <string name="lblManual">Manual Hear Me</string>
+    <string name="lblSons"> Sons relaxantes</string>
+
+    <string name="lblVUusuario">usuário:</string>
+    <string name="lblVUPostagens">Postagens</string>
+    <string name="lblVUInformacoes">Informações</string>
+    <string name="textoSuperiorGif">Quando o GIF estiver se expandindo, INSPIRE</string>
+    <string name="textoInferiorGif">Quando o GIF estiver se recolhendo, EXPIRE</string>
+    <string name="hint_postagem">Digite algo sobre a publicação&#8230;</string>
+
+    <string name="lblVUSeuPerfil">Seu Perfil</string>
+    <string name="lblTempoPostagem"/>
+    <string name="rbMasc">Masculino</string>
+    <string name="rbFem">Feminino</string>
+    <string name="lblInserirFoto">Clique para inserir sua foto</string>
+    <string name="lblComentario">Comentarios</string>
+
+</resources>
